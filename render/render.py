@@ -18,6 +18,7 @@ from datetime import timedelta
 import pathlib
 from PIL import Image
 import logging
+from selenium.webdriver.common.by import By
 
 
 class RenderHelper:
@@ -36,7 +37,7 @@ class RenderHelper:
         current_window_size = driver.get_window_size()
 
         # Extract the client window size from the html tag
-        html = driver.find_element_by_tag_name('html')
+        html = driver.find_element(By.TAG_NAME, 'html')
         inner_width = int(html.get_attribute("clientWidth"))
         inner_height = int(html.get_attribute("clientHeight"))
 

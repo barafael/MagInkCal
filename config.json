@@ -1,8 +1,8 @@
 {
-  "displayTZ": "Asia/Hong_Kong",
+  "displayTZ": "Europe/Berlin",
   "thresholdHours": 24,
-  "maxEventsPerDay": 3,
-  "isDisplayToScreen": false,
+  "maxEventsPerDay": 4,
+  "isDisplayToScreen": true,
   "isShutdownOnComplete": false,
   "batteryDisplayMode": 1,
   "weekStartDay": 6,
